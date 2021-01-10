@@ -22,12 +22,3 @@ variable "identity_location" {
   type    = string
   default = "Australia East"
 }
-
-
-
-#   source                     = "./modules/general"
-#   scope                      = "/subscriptions/23156ece-4568-4f49-8b95-0aa51cc7a4c"
-#   allowed_locations          = "[\"Australia East\", \"Australia Southeast\"]"
-#   stored_management_group_id = "a1fed89c-7184-43d7-ac4b-197bc55ef160"
-#   applied_scope_id           = "/providers/Microsoft.Management/managementGroups/a1fed89c-7184-43d7-ac4b-197bc55ef160"
-#   identity_location          = "Australia East"
