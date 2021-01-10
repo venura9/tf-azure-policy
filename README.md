@@ -1,9 +1,9 @@
 # tf-azure-policy
 An implementation of Azure Policy with Terraform. 
 
-* This is a collection of modules encapsulating the policies under policy sets (aka initiatives). 
-* The policies used in the policy sets are only builtin policies. 
+* This repository is a collection of Terraform modules encapsulating the Azure Policies under policy sets (a.k.a Azure Policy Initiatives). 
+* Only the builtin policies have been grouped under the policy sets. (No Custom Policies) 
 
-- Currently Implemneted modules and the respective policies
+## Currently Implemented modules and the respective policies
 
 TBA
