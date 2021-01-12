@@ -20,11 +20,11 @@ resource "azurerm_policy_assignment" "general-policy-set-assignment" {
   display_name = "General Policy Set"
 
   identity {
-    type     = "SystemAssigned"
+    type = "SystemAssigned"
   }
- location = var.identity_location
- 
- parameters = <<PARAMETERS
+  location = var.identity_location
+
+  parameters = <<PARAMETERS
     {
       "allowedLocations": {
          "value": ${var.allowed_locations}

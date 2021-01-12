@@ -19,11 +19,8 @@ resource "azurerm_policy_assignment" "vm-policy-set-assignment" {
   description  = "Collection of VM Policy applicable to a specified scope"
   display_name = "VM Policy Set"
 
-  identity {
-    type     = "SystemAssigned"
-  }
- location = var.identity_location
-} 
+  location = var.identity_location
+}
 
 resource "azurerm_policy_set_definition" "vm-polciy-set-def" {
 
@@ -36,7 +33,7 @@ resource "azurerm_policy_set_definition" "vm-polciy-set-def" {
     # "Audit virtual machines without disaster recovery configured"
     # Effect: auditIfNotExists
     # Parameters: None
-    policy_definition_id = "/providers/Microsoft.Authorization/policyDefinitions/0015ea4d-51ff-4ce3-8d8c-f3f8f0179a56" 
+    policy_definition_id = "/providers/Microsoft.Authorization/policyDefinitions/0015ea4d-51ff-4ce3-8d8c-f3f8f0179a56"
   }
 
   policy_definition_reference {
